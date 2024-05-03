@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="InformationScreen" extends="Group"
+    xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd"
+    initialFocus="buttonGroupSample">
+    <script type="text/brightscript" uri="InformationScreen.brs" />
+    <children>
+        <Label
+            id="presentationLabel"
+            width="1280"
+            translation="[250,110]"
+            font="font:MediumBoldSystemFont"
+        />
+        <LayoutGroup
+            translation="[1000, 180]"
+            layoutDirection="horiz"
+            horizAlignment="right"
+            itemSpacings="[40]">
+            <LayoutGroup
+                itemSpacings="[14,10]"
+                layoutDirection="vert">
+                <Rectangle
+                    width="400"
+                    height="201"
+                    color="0xFFFFFF00">
+                    <Poster
+                        id="poster"
+                        width="400"
+                        loadWidth="400"
+                        height="201"
+                        loadHeight="201"
+                        loadDisplayMode="scaleToFit" />
+                </Rectangle>
+                <Label
+                    id="appInfoTitle"
+                    width="400"
+                    horizAlign="center"
+                    text="Application information"
+                    font="font:MediumBoldSystemFont"
+                />
+                <Label
+                    id="appInfoNameLabel"
+                    width="400"
+                />
+                <Label
+                    id="appInfoIdLabel"
+                    width="400"
+                />
+                <Label
+                    id="appInfoVersionLabel"
+                    width="400"
+                />
+                <Label
+                    id="appInfoIsDevLabel"
+                    width="400"
+                />
+                <Label
+                    id="appInfoDevIdLabel"
+                    width="400"
+                />
+            </LayoutGroup>
+            <Group>
+                <LayoutGroup
+                    itemSpacings="[15,10]"
+                    translation="[0,208]">
+                    <Label
+                        id="deviceTitleInformation"
+                        width="500"
+                        text="Device information"
+                        font="font:MediumBoldSystemFont"
+                    />
+                    <Label
+                        id="modelNameLabel"
+                        width="500"
+                    />
+                    <Label
+                        id="modelTypeLabel"
+                        width="500"
+                    />
+                    <Label
+                        id="deviceConnectionLabel"
+                        width="500"
+                    />
+                    <Label
+                        id="deviceResolutionLabel"
+                        width="500"
+                    />
+                    <Label
+                        id="deviceAspectRatioLabel"
+                        width="500"
+                    />
+                    <ButtonGroup id="buttonGroupSample" />
+                    <Poster id="samplePoster"
+                        opacity="1.0"
+                        uri="http://devtools.web.roku.com/samples/images/Landscape_1.jpg" />
+                </LayoutGroup>
+            </Group>
+        </LayoutGroup>
+    </children>
+</component>
